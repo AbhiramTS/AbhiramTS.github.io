@@ -1,0 +1,30 @@
+.bigBox {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  align-content: center;
+  justify-content: center;
+}
+
+.bigBox > div {
+  height: 5rem;
+  width: 5rem;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.element {
+  height: 2rem;
+  width: 2rem;
+  border: 0.5rem solid #ffffff;
+  background-color: aqua;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3rem;
+}
