@@ -28,3 +28,44 @@
   align-items: center;
   border-radius: 1.3rem;
 }
+
+.tw-input {
+  @apply flex;
+  @apply items-center;
+  @apply border-b;
+  @apply py-2;
+  @apply z-20;
+  @apply border-gray-500;
+  @apply mx-2;
+}
+.tw-radio-box {
+  @apply flex;
+  @apply z-20;
+}
+.tw-radio-box > label {
+  @apply inline-flex;
+  @apply items-center;
+  @apply mt-3;
+}
+.tw-radio-box > label > input {
+  @apply h-5;
+  @apply w-5;
+  @apply text-gray-600;
+}
+.tw-radio-box > label > span {
+  @apply mx-2;
+  @apply text-gray-700;
+}
+
+.tw-input > input {
+  @apply appearance-none;
+  @apply bg-transparent;
+  @apply border-none;
+  @apply w-full;
+  @apply text-gray-700;
+  @apply mr-3;
+  @apply py-1;
+  @apply px-2;
+  @apply leading-tight;
+  @apply focus:outline-none;
+}

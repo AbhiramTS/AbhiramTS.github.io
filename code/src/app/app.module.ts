@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
@@ -12,7 +12,9 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule
+    ScullyLibModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

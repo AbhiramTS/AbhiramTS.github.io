@@ -1,3 +1,54 @@
-<div #bigBox [style]="{'background-color':  bgColor}" class="bigBox">
-  <div #box></div>
+<div
+  #bigBox
+  [style]="{ 'background-color': bgColor }"
+  class="min-h-screen w-screen"
+>
+  <div #box class="z-0"></div>
+  <div class="flex justify-end z-20">
+    <div class="tw-input">
+      <input
+        #PointSize="ngModel"
+        name="PointSize"
+        type="number"
+        placeholder="Point Size"
+        [(ngModel)]="pointSize"
+        (change)="calculatePitch()"
+        aria-label="Point Size"
+      />
+    </div>
+    <div class="tw-input">
+      <input
+        type="number"
+        #Gap="ngModel"
+        name="Gap"
+        [(ngModel)]="gap"
+        (change)="calculatePitch()"
+        placeholder="Gap"
+        aria-label="Gap"
+      />
+    </div>
+    <div class="tw-radio-box">
+      <label>
+        <input
+          [(ngModel)]="typeOfDesign"
+          [value]="type.Solid"
+          type="radio"
+        /><span>Solid</span>
+      </label>
+      <label>
+        <input
+          [(ngModel)]="typeOfDesign"
+          [value]="type.Stroke"
+          type="radio"
+        /><span>Stroke</span>
+      </label>
+      <label>
+        <input
+          [(ngModel)]="typeOfDesign"
+          [value]="type.SolidAndStroke"
+          type="radio"
+        /><span>Solid And Stroke</span>
+      </label>
+    </div>
+  </div>
 </div>
